@@ -33,7 +33,7 @@ jobs:
 
       # configure aws 
       - name: Run a multi-line script
-        run: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: arn:aws:iam::389431311790:role/git-openid-role
           role-session-name: samplesessionname
