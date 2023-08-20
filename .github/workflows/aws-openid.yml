@@ -32,7 +32,7 @@ jobs:
         run: echo Hello, world!
 
       # configure aws 
-      - name: Run a multi-line script
+      - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: arn:aws:iam::389431311790:role/git-openid-role
